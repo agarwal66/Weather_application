@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="icon"
+      href="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-1024.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/cloud-solid.svg" />
+    <link rel="stylesheet" href="css/Styless2.css" />
+</head>
+  <body>
+    <div class="container-fluid main_menu">
+      <div class="row">
+        <div class="col-md-10-12 mx-auto">
+          <nav class="navbar navbar-expand-lg  ">
+            <a class="navbar-brand" href="#"><i class="far fa-snowflake"></i>TechnoWeather<i class="far fa-snowflake"></i></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <!-- ml mtlnbb margin left mr mtln right -->
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"
+                    >Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Weather</a>
+                    <!-- <li><a href="index.html">Forecast</a></li> -->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About us</a>
+                  </li>
+              <!-- <form class="form-inline my-2 my-lg-0">
+                <input
+                  class="form-control mr-sm-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                /> -->
+                <!-- <button
+                  class="btn btn-outline-success my-2 my-sm-0"
+                  type="submit"
+                >
+                  Search
+                </button> -->
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- main header -->
+    <div class="container-fluid main_header">
+        <div class="row">
+          <div class="col-md-10-12 mx-auto">
+            <div class="row">
+                <!-- left side div -->
+                <div class="col-md-6 col-12 main_header_left">
+                    <p>Welcome to weather app</p>
+                    <h1>Get the latest <span class="text_clr">weather</span>Info of your city</h1>
+                    <a href="/map.html"><button>Check now</button></a>
+                </div>
+                <!-- right side div -->
+                <div class="col-md-6 col-12 main_header_right">
+                    <main>
+                        <section id="weatherData" class="hidden">
+                          <ul>
+                            <h2>Weather Data:</h2>
+                            <div id="cityName"></div>
+                            <div id="temperature"></div>
+                            <div id="description"></div>
+                            <div id="humidity"></div>
+                            <div id="windSpeed"></div>
+                          </ul>
+                        </section>
+                        <section class="countries">
+                          <h2>Popular Countries:</h2>
+                          <ul>
+                            <li><a href="#" id="London">London</a></li>
+                            <li><a href="#" id="Paris">Paris</a></li>
+                            <li><a href="#" id="Berlin">Berlin</a></li>
+                            <li><a href="#" id="Toronto">Toronto</a></li>
+                            <li><a href="#" id="Sydney">Sydney</a></li>
+                            <li><a href="#" id="Tokyo">Tokyo</a></li>
+                          </ul>
+                        </section>
+                      </main>
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img  src="images/pexels-vladyslav-dushenkovsky-4100130.jpg" alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img  src="images/pexels-charlou-mark-sangoan-16372221.jpg" alt="Second slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img  src="images/pexels-lisa-fotios-1107717.jpg" alt="Third slide">
+                          </div>
+                        </div>
+                        <!-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a> -->
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Created by Prateek Agarwal</p>
+    </footer>
+    <script src="js/Script1.js"></script>
+  </body>
+</html>

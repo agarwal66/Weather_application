@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Piazzolla", serif;
+}
+:root {
+  --main-bg: #1e272e;
+  --main-color: #0097e6;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  margin: 0;
+}
+.main_menu {
+  background-color: var(--main-bg);
+}
+.navbar {
+  color: #fff;
+  background-color: var(--main-bg);
+  padding: 2rem 0;
+}
+.navbar li {
+  margin-left: 2rem;
+  /* 2rem mtlb 20pixel */
+}
+.navbar a {
+  columns: #fff;
+  font-size: 1.8rem;
+}
+.navbar a:hover {
+  color: var(--main-color);
+}
+.navbar-toggler {
+  background-color: grey;
+}
+.fa-snowflake {
+  transition: all linear;
+  animation: rot 2s linear infinite;
+  color: var(--main-color);
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* main header */
+.main_header_left {
+  height: 70rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.main_header_left p {
+  font-size: 2rem;
+}
+.main_header_left h1 {
+  font-size: 4rem;
+  margin: 1rem 0 4rem 0;
+  text-transform: capitalize;
+  /* color: var(--main-color); */
+}
+.main_header_left .text_clr {
+  color: var(--main-color);
+}
+.main_header_left button {
+  border: none;
+  padding: 0.8rem 1.8rem;
+  font-size: 1.4rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px #000;
+  outline: none;
+}
+.main_header_left button:hover {
+  box-shadow: 0 8px 6px -6px var(--main-color);
+}
+.main_header_right {
+  height: 70rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.main_header_right figure img {
+  filter: drop-shadow(0 0.3em 0.5rem rgba(0, 0, 0, 0.2));
+}
+
+/* extra site codee mine */
+#cityName {
+  color: #2f8bb9;
+}
+#temperature {
+  color: #ff5733;
+}
+#description {
+  color: #3366ff;
+}
+#humidity {
+  color: #0d5544;
+}
+#windSpeed {
+  color: #ff9933;
+}
+.countries {
+  margin-top: 20px;
+}
+
+.countries h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.countries ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.countries li {
+  margin-right: 10px;
+}
+
+.countries a {
+  display: block;
+  background-color: #074252;
+  padding: 20px; /* Adjust padding */
+  border-radius: 5px;
+  text-decoration: none;
+  color: #d50f0f;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+}
+
+.countries a:hover {
+  background-color: #dddddd;
+}
+
+#weatherData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bolder;
+  border: 2px solid #072b1a;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#weatherData h2 {
+  margin: 1.9px;
+  color: #0e3929;
+}
+#location {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.location-icon {
+  display: inline-block;
+  height: 0.6em;
+  width: auto;
+  margin-right: 5px;
+}
+
+.weather-container {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+}
+
+.weather-icon img {
+  filter: drop-shadow(0 0 2px #2d8698);
+  width: 100%;
+}
+
+.weather-temp {
+  margin: 0;
+  font-weight: 700;
+  font-size: 4em;
+  color: #7e1414;
+}
+
+.weather-desc {
+  margin: 0;
+  color: #878710;
+}
+
+/* Popular Cities */
+.countries {
+  margin-top: 20px;
+}
+
+.countries ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.countries li {
+  margin-right: 10px;
+  margin-left: 10px;
+  flex: 1;
+}
+
+.countries a {
+  display: block;
+  background-color: #aac438;
+  padding: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #085844;
+  font-weight: bold;
+  text-align: center;
+}
+
+.countries a:hover {
+  background-color: #052a4f;
+}
+
+/* carsouel imagee css */
+
+#carouselExampleControls .carousel-item img {
+  /* Add your CSS properties here */
+  /* For example: */
+  width: 550px; /* Set width to 50% */
+  height: 35vh; /* Set height to 80% of viewport height */
+}
+
+/* footer code */
+footer {
+  width: 100%;
+  background-color: var(--main-bg);
+  margin-top: auto;
+  position: fixed;
+  height: 6rem;
+  left: 0;
+  bottom: 0;
+}
+footer p {
+  margin: 2px;
+  text-align: center;
+  color: #fff;
+  line-height: 3rem;
+  font-size: 1.4rem;
+}
+.weather-info {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+}
+/* responsive code */
+@media (max-width: 768px) {
+  .main_header_left {
+    height: auto;
+    margin: 5rem 0;
+  }
+  .main_header_right {
+    height: auto;
+    margin-top: 3rem;
+  }
+}
